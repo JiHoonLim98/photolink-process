@@ -1,0 +1,10 @@
+POST localhost:2727/user/signUp
+Content-Type: application/json
+
+{
+  "password": "user",
+  "name" : "manager",
+  "phoneNumber" : "01012341234",
+  "email" : "abc@naver.com",
+  "birthday" : "2020-01-01"
+}

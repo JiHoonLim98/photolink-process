@@ -1,9 +1,23 @@
+#server:
+#  port: 2727
+#
+#spring:
+#  servlet:
+#    multipart:
+#      max-file-size: 20MB
+#      max-request-size: 20MB
+#
+
 server:
   port: 2727
 
 spring:
-  servlet:
-    multipart:
-      max-file-size: 20MB
-      max-request-size: 20MB
+  h2:
+    console:
+      enabled: true
 
+  datasource:
+    url: jdbc:h2:mem:~/photolink
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
